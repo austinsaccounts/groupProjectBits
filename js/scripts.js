@@ -1,27 +1,29 @@
+var monsterTracker = 2;
+//this is for proto display reasons and starting with 2 inputted monsters
+
 //begin business
-    alert("worked");
+// we need  a
+// Card function,
+// card.protoype(damage,damage,health,id,name),
+//
 //end business logic
 
 
 
 
 //begin user interface
-$(document).ready(function() {
-  alert("");
-  // event.prevent(Default);
-  //
+$(document).ready(function(){
 
   $("img").click(function(){
-    alert("worked");
-      // var attkHealth =$("input[type=radio][name=size]:checked").attr('health');
-      // var attkdamage =$("input[type=radio][name=size]:checked").attr('health');
-      // var attkname =$("input[type=radio][name=size]:checked").attr('health');
-
-  })
-  // $("input[type=checkbox][name=toppings]").click(function(){
-    // var pizzapic = $(this).val();
-    // $('.'+pizzapic).toggleClass("hidden");
-
+    $(this).toggleClass('inactive');
+    var attkDamage = $(this).attr('damage');
+    var attkHealth = $(this).attr('health');
+    var attkName = $(this).attr('monsterName');
+// illustration alert begins
+    alert("my name is " +attkName+ " my information was gathered from my html. " +attkDamage+ " is the damage i inflict, while i can inflict " +attkHealth+ "  we can quickly create these with a prototype ");
+//illustration alert ended
+$('#makeMonster').show();
+})
 
 
 })

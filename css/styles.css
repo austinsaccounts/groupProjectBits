@@ -1,0 +1,6 @@
+body {
+  background-color: black;
+}
+.inactive {
+  opacity: .5;
+}

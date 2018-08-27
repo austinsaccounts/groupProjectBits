@@ -2,5 +2,14 @@ body {
   background-color: black;
 }
 .inactive {
+  opacity: .3;
+}
+img:hover {
   opacity: .5;
+  -webkit-backface-visibility;
+}
+/* -webkit-transform:translate3d(0,0,0); */
+img:active {
+  opacity: .9;
+  -webkit-backface-visibility;
 }
